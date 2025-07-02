@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Time Mercenary Wiki</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="wiki-intro-li" class="nav-item" data-key="wiki-li">Wiki Main Page</li>
+                <li id="download-li" class="nav-item" data-key="download-li">Download</li>
+                <li id="changelog-li" class="nav-item" data-key="changelog-li">Changelog</li>
+                <li id="whats-next-li" class="nav-item" data-key="whats-next-li">What's Next ?</li>
+                <li id="about-me-li" class="nav-item" data-key="about-me-li">About Me</li>
+            </ul>
+        </nav>
+        <div>
+            <!--<button id="lang-switch">Français</button>-->
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </div>
+    </header>
+    <main>
+        <section id="wiki-intro-page" class="content-section">
+            <h1 data-key="wiki-main-title">Welcome to the Time Mercenaries Wiki!</h1>
+            <h2 data-key="wiki-main-whatis-title">What is Time Mercenaries?</h2>
+            <p data-key="wiki-main-whatis-p1">
+                Time Mercenaries is a mod centered around the <strong>Dimensional Time Clock</strong>. This item allows you to communicate with and manage a team of unique mercenaries.
+                <br>Your job is to send them on missions, and watch as they level up, becoming more powerful and unlocking new, more challenging (and rewarding) quests.
+            </p>
+            <p data-key="wiki-main-whatis-p2">
+                This mod adds very few items and is mostly GUI based for now, it's main purpose is to give an alternate way of obtaining some Minecraft items.
+            </p>
+            <h2 data-key="wiki-main-features-title">Key Features</h2>
+            <ul>
+                <li data-key="wiki-main-feature1"><strong>Mercenaries:</strong> 13 different Mercenaries with each their own missions and item pool.</li>
+                <li data-key="wiki-main-feature2"><strong>Mission Rarity System:</strong> As you level up your mercenaries, they will unlock missions of new rarities which offer greater and new rewards.</li>
+                <li data-key="wiki-main-feature3"><strong>Global Progression:</strong> Your progression is saved globally, this means that if you lose your Dimensional Time Clock, you can craft another one and get right back where you were.</li>
+                <li data-key="wiki-main-feature4"><strong>Modular Upgrades:</strong> Enhance your Dimensional Time Clock with a wide array of modules, unlocking new mechanics, quality-of-life features, and even new mercenaries.</li>
+                <li data-key="wiki-main-feature5"><strong>JEI Integration:</strong> Each item that can be obtained with a Mission will be shown in it's own JEI GUI, you will see which Mercenary you need to recruit and the Mission Rarity needed.</li>
+            </ul>
+            <h2 data-key="wiki-main-gettingstarted-title">Getting Started</h2>
+            <p data-key="wiki-main-gettingstarted-p1">
+                Ready to recruit your first Mercenary? Your first step is to craft the <strong>Dimensional Time Clock</strong>. Once you have it, simply use the item (Right-Click, or use its keybind) to open the main interface and meet your first three potential recruits.
+            </p>
+            <img src="images/crafting.png" alt="Crafting" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p2">
+                Once you first use the <strong>Dimensional Time Clock</strong>, you will be greeted with the Recruiting menu. On there you will see 3 randomly selected mercenaries ready to be recruited, but you will be able to choose one of them only.
+            </p>
+            <img src="images/recruit_screen.png" alt="RecruitScreen" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p3">
+                You will then be able to choose between 3 Missions. Each of them will reward different items and will also require you to give some to start. The required items will be deleted from your inventory when you start the mission.
+            </p>
+            <img src="images/mission_screen.png" alt="MissionScreen" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p4">
+                You will then have to wait for the mission to end to see if your Mercenary was successfull or not. At first, the time a mission take is hidden but the Common missions usually take only a few minutes.
+                <br>Also you will be able to see your <strong>Dimensional Time Clock</strong> item texture update in real time !
+                <br><strong>Important</strong> note ! The timer goes down only if you have the <strong>Dimensional Time Clock</strong> item on yourself !
+            </p>
+            <img src="images/waiting_screen.png" alt="WaitingScreen" class="image"/>
+            <img src="images/waiting_gif.gif" alt="WaitingGif" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p5">
+                When the timer is up, you can finish the Mission, on success the item will then spawn in front of you on the ground. So be carefull where you complete your missions !
+            </p>
+            <img src="images/end_success_screen.png" alt="EndScreen" class="image"/>
+            <img src="images/mission_success_gif.gif" alt="SuccessGif" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p6">
+                Upon leveling up, your mercenaries "Trait" button will change color. This will indicate that you can level up one of it's trait to strengthen him for his future missions !
+            </p>
+            <img src="images/colored_trait_button.png" alt="TraitButton" class="image"/>
+            <img src="images/trait_screen.png" alt="TraitScreen" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p7">
+                There are also global upgrades that you can do with "Modules". You can hover over each one to see what they will unlock !
+            </p>
+            <img src="images/modules_screen.png" alt="ModulesScreen" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p8">
+                Failed missions will sometimes inflict damage yo your mercenary, and if they take too much damage they will die and will lose a level. You will be able to resurrect them by paying with some of your Experience Levels.
+            </p>
+            <img src="images/death_screen.png" alt="DeathScreen" class="image"/>
+            <img src="images/death_screen_2.png" alt="DeathScreen" class="image"/>
+            <img src="images/resurrect_gif.gif" alt="ResurrectGif" class="image"/>
+        </section>
+        <section id="download-page" class="content-section">
+            <h1 data-key="download-page-title">Download</h1>
+            <h2 data-key="download-page-title">First Step</h2>
+            <p data-key="download-page-p1">This mod is only available for the 1.20.1 version of Minecraft using either Neoforge or Forge modloader. You must first download the file using Curseforge or Modrinth.</p>
+            <p data-key="download-page-p2">Then you simply have to put the downloaded .jar file in your Minecraft "mods" folder and that's it !</p>
+            <p data-key="download-page-p3">This mod has no dependency and does not require any additional files to work. If you are playing on a server, this mod is required in both the Client and the Server files.</p>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/time-mercenaries/files" target="_blank">
+                <img src="images/curseforge.png" alt="Curseforge" class="image" />
+            </a>
+            <a href="https://modrinth.com/mod/time-mercenaries/versions" target="_blank">
+                <img src="images/modrinth.png" alt="Modrinth" class="image" />
+            </a>
+        </section>
+        <section id="changelog-page" class="content-section">
+            <h1 data-key="changelog-page-title">Changelog</h1>
+            <h2>Version 0.11.0</h2>
+            <p><strong>!!! UPDATING WILL CANCEL CURRENTLY SENT MERCENARY</strong></p>
+            <ul>
+                <li>New BIG UPDATE !</li>
+                <li>Added new modules !</li>
+                <li>Added new mercenaries</li>
+                <li>Added new advancements</li>
+                <li>Added a new trait</li>
+                <li>Reworked module item costs</li>
+                <li>Lots of technical changes for better compatibility and stability.</li>
+                <li>Stored data now uses Capabilities</li>
+                <li>Missions are now stored in JSON format and can be configured.</li>
+            </ul>
+
+            <h2>Version 0.10.1</h2>
+            <ul>
+                <li>Fixed a crash on some failed missions</li>
+            </ul>
+
+            <h2>Version 0.10.0</h2>
+            <p><strong>!!! UPDATING WILL CANCEL CURRENTLY SENT MERCENARY</strong></p>
+            <ul>
+                <li>Added ingame Guide in the Dimensional Clock Item</li>
+                <li>Added new system: Modules. Modules are upgrades tied to the Dimensional Time Clock which permanently unlocks perks. There are a lot of them and you can read about each one in the ingame Guide.</li>
+                <li>Added a new mercenary: Pirddiv the Dune Worm</li>
+                <li>Added a waiting screen to see the mercenaries progress on his mission</li>
+                <li>Added health points system to Mercenaries.</li>
+                <li>Added new advancements</li>
+                <li>Replaced the Death trait with the Sturdiness trait</li>
+                <li>Modified the death system. There is no more a chance to die in addition to the fail chance. Now when a mission is failed, mercenaries can suffer some damage and lose health.</li>
+                <li>Mercenary death does not reset level and traits anymore. They now lose a single level on death and must be resurrected</li>
+                <li>To resurrect a Mercenary, you must pay levels equal to 10 + MercenaryLevel. They will revive with 25% of their maximum health.</li>
+                <li>Modified custom GUI layout a bit</li>
+                <li>Fixed rewards items count sometimes not right</li>
+                <li>Fix random missions success items tooltip in end screen</li>
+                <li>Fix potential lock on failed random mission</li>
+                <li>Fixed problems with LAN mode not working correctly.</li>
+            </ul>
+
+            <h2>Version 0.9.0</h2>
+            <ul>
+                <li>Added a new Mercenary: Orion the Enchanter</li>
+                <li>Added a new Mercenary: Grizzle the Potion Master</li>
+                <li>Localised item names in mission tooltip</li>
+                <li>Fix Advancement Name</li>
+                <li>Fix Bribe item count in end mission screen</li>
+                <li>Fixed some item name in tooltips</li>
+            </ul>
+
+            <h2>Version 0.8.2</h2>
+            <ul>
+                <li>Changed color of Trait button to indicate a trait is available</li>
+                <li>GUI can now be closed using the mod keybind or the vanilla inventory keybind</li>
+            </ul>
+
+            <h2>Version 0.8.1</h2>
+            <ul>
+                <li>Fixed Mercenary Level starting at 0</li>
+                <li>Fixed mission item icons</li>
+            </ul>
+
+            <h2>Version 0.8.0</h2>
+            <ul>
+                <li>Added JEI Integration</li>
+            </ul>
+
+            <h2>Version 0.7.0</h2>
+            <ul>
+                <li>Added Advancements</li>
+            </ul>
+
+            <h2>Version 0.6.0</h2>
+            <ul>
+                <li>Added Bribing mechanic: Each Mercenary can be bribed with a custom item to ensure he will be present in the next recruitment.</li>
+                <li>Added possibility to give the Mercenary a Totem of Undying to prevent the next death he would have in a mission.</li>
+                <li>Added possibility to reset the Mercenary Traits and reallocate them. (Removes all randomly gained traits too but cannot reallocate those)</li>
+            </ul>
+
+            <h2>Version 0.5.0</h2>
+            <ul>
+                <li>Added new trait: Scavenger</li>
+                <li>Scavenger adds a chance to permanently upgrade a random trait after a successful mission</li>
+            </ul>
+
+            <h2>Version 0.4.0</h2>
+            <ul>
+                <li>Changed clock texture</li>
+                <li>Added dynamic clock texture changing with mission progress</li>
+                <li>Fixed exp bar display bug in recruit screen</li>
+            </ul>
+
+            <h2>Version 0.3.1</h2>
+            <ul>
+                <li>Fixed Keybind</li>
+            </ul>
+
+            <h2>Version 0.3.0</h2>
+            <ul>
+                <li>Added keybind to open Dimensional Time Clock menu (works even if clock is in inventory and not in hand)</li>
+                <li>Added some "rewards" for some failed missions</li>
+                <li>Added description to failed/deadly missions end screen</li>
+                <li>Added icon to show when Greedy Trait triggered</li>
+                <li>Fix Greedy Trait cannot be leveled</li>
+            </ul>
+
+            <h2>Version 0.2.0</h2>
+            <ul>
+                <li>Added sound when timer ends for a mission.</li>
+                <li>Added Traits, they are upgrades for your mercenaries after they level up.</li>
+                <li>Reduced skip time from 300 to 150 seconds.</li>
+            </ul>
+        </section>
+        <section id="whats-next-page" class="content-section">
+            <h1 data-key="whats-next-page-title">What's Next ?</h1>
+            <h2>Currently Being Developped</h2>
+            <ul>
+                <li>Lore Progression</li>
+                <li>Custom Questing Dimension</li>
+                <li>More Endgame Modules</li>
+                <li>Curio Integration</li>
+                <li>Other Mod Integration (New Mercenaries)</li>
+            </ul>
+            <h2>Future Ideas</h2>
+            <ul>
+                <li>More Multiplayer features</li>
+                <li>Summoning Mercenaries to help in combat</li>
+                <li>Some other ideas that I won't spoil yet...</li>
+            </ul>
+        </section>
+        <section id="about-me-page" class="content-section">
+            <h1 data-key="about-me-page-title">About Me</h1>
+            <h2>Hello, I am Sluggly !</h2>
+            <p data-key="about-me-p1">I am a 27 years old french PHD Student in Computer Science. I love Minecraft and coding things, so I made a Minecraft mod.</p>
+            <p data-key="about-me-p2">I love to play large Minecraft modpacks and I wanted to add my own mod in there, this was initially developped for my own gameplay with features I like.</p>
+            <p data-key="about-me-p3"> Feel free to contact me on Discord for anything : <strong>sluggly</strong> </p>
+        </section>
+    </main>
+	<script src="js/script.js"></script>
+</body>
+</html>
