@@ -47,6 +47,7 @@ var currentSection = 'wiki-intro-page';
 document.getElementById('wiki-intro-li').addEventListener('click', () => { showSection('wiki-intro-page'); });
 document.getElementById('download-li').addEventListener('click', () => { showSection('download-page'); });
 document.getElementById('changelog-li').addEventListener('click', () => { showSection('changelog-page'); });
+document.getElementById('mods-compat-li').addEventListener('click', () => { showSection('mods-compat-page'); });
 document.getElementById('whats-next-li').addEventListener('click', () => { showSection('whats-next-page'); });
 document.getElementById('about-me-li').addEventListener('click', () => { showSection('about-me-page'); });
 

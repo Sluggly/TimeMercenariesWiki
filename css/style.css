@@ -112,3 +112,13 @@ h2 {
     color: #e0e0e0;
     border-bottom: 2px solid #444;
 }
+
+h2:has(img) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 img {
+    align-items: center;
+}
