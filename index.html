@@ -11,6 +11,7 @@
         <nav>
             <ul>
                 <li id="wiki-intro-li" class="nav-item" data-key="wiki-li">Wiki Main Page</li>
+                <li id="content-li" class="nav-item" data-key="content-li">Content</li>
                 <li id="download-li" class="nav-item" data-key="download-li">Download</li>
                 <li id="changelog-li" class="nav-item" data-key="changelog-li">Changelog</li>
                 <li id="mods-compat-li" class="nav-item" data-key="mods-compat-li">Mods Compatibility</li>
@@ -36,11 +37,11 @@
             </p>
             <h2 data-key="wiki-main-features-title">Key Features</h2>
             <ul>
-                <li data-key="wiki-main-feature1"><strong>Mercenaries:</strong> 13 different Mercenaries with each their own missions and item pool.</li>
+                <li data-key="wiki-main-feature1"><strong>Mercenaries:</strong> 14 different Mercenaries with each their own missions and item pool.</li>
                 <li data-key="wiki-main-feature2"><strong>Mission Rarity System:</strong> As you level up your mercenaries, they will unlock missions of new rarities which offer greater and new rewards.</li>
                 <li data-key="wiki-main-feature3"><strong>Global Progression:</strong> Your progression is saved globally, this means that if you lose your Dimensional Time Clock, you can craft another one and get right back where you were.</li>
                 <li data-key="wiki-main-feature4"><strong>Modular Upgrades:</strong> Enhance your Dimensional Time Clock with a wide array of modules, unlocking new mechanics, quality-of-life features, and even new mercenaries.</li>
-                <li data-key="wiki-main-feature5"><strong>JEI Integration:</strong> Each item that can be obtained with a Mission will be shown in it's own JEI GUI, you will see which Mercenary you need to recruit and the Mission Rarity needed.</li>
+                <li data-key="wiki-main-feature5"><strong>JEI/EMI Integration:</strong> Each item that can be obtained with a Mission will be shown in it's own GUI, you will see which Mercenary you need to recruit and the Mission Rarity needed.</li>
             </ul>
             <h2 data-key="wiki-main-gettingstarted-title">Getting Started</h2>
             <p data-key="wiki-main-gettingstarted-p1">
@@ -83,6 +84,51 @@
             <img src="images/death_screen.png" alt="DeathScreen" class="image"/>
             <img src="images/death_screen_2.png" alt="DeathScreen" class="image"/>
             <img src="images/resurrect_gif.gif" alt="ResurrectGif" class="image"/>
+            <p data-key="wiki-main-gettingstarted-p9">
+                Mercenaries have a Hunger mechanic. Each mission cost some Hunger to achieve, but even if a Mercenary is low on Hunger you will still be able to send him on a mission. When a mercenary is too hungry, he will take damage on missions. Hunger is refilling slowly over time and after each mission.
+            </p>
+            <img src="images/hunger.png" alt="Hunger" class="image"/>
+        </section>
+        <section id="content-page" class="content-section">
+            <h1 data-key="content-page-title">Mod Content</h1>
+            <div class="sub-nav">
+                <button id="mercenaries-btn" class="sub-nav-item">Mercenaries</button>
+                <button id="arena-btn" class="sub-nav-item">Arena</button>
+                <button id="lore-btn" class="sub-nav-item">Lore</button>
+            </div>
+            <div id="mercenaries-content" class="sub-content-section">
+                <div id="mercenary-display-container">
+                    <div class="merc-nav">
+                        <button id="prev-merc-btn">< Previous</button>
+                        <h2 id="merc-name-counter"></h2>
+                        <button id="next-merc-btn">Next ></button>
+                    </div>
+                    <div class="merc-details">
+                        <img id="merc-portrait" src="" alt="Mercenary Portrait" />
+                        <p id="merc-description"></p>
+                    </div>
+                    <div class="merc-rewards">
+                        <h3>Possible Rewards</h3>
+                        <div id="merc-rewards-grid"></div>
+                    </div>
+                    <div class="merc-artifacts">
+                        <h3>Legendary Artifacts</h3>
+                        <div id="merc-artifacts-showcase"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="arena-content" class="sub-content-section">
+                <h2>The Arena</h2>
+                <p>The Arena is a special dimension where the strongest fighters from across the realms gather to test their might. Speak with Lene, the Arena's overseer, to begin your trial.</p>
+                <p>You can challenge powerful champions in single combat or place bets on battles between two teams of creatures to earn coins.</p>
+                <p>This dimension is still heavy WIP and not yet accessible.</p>
+            </div>
+
+            <div id="lore-content" class="sub-content-section">
+                <h2>Lore</h2>
+                <p>Lore will be a important part of this mod, it will evolve as the mod gets updated, for now it is heavily WIP.</p>
+            </div>
         </section>
         <section id="download-page" class="content-section">
             <h1 data-key="download-page-title">Download</h1>
@@ -99,10 +145,59 @@
         </section>
         <section id="changelog-page" class="content-section">
             <h1 data-key="changelog-page-title">Changelog</h1>
-            <h2>Version 0.12.0 WIP</h2>
+            <h2>Version 0.13.1</h2>
             <ul>
-                <li>Curios Integration</li>
+                <li>Added Hestra artefact items</li>
+                <li>Rebalanced Hestra mission fail chances and damages</li>
+            </ul>
+            <h2>Version 0.13.0</h2>
+            <ul>
+                <li>Added a new Mercenary : Hestra the Heat-Forge</li>
+                <li>Added Mercenaries voicelines transcripts</li>
+                <li>Added a client config to mute all sounds from the mod (Default false)</li>
+                <li>Added a client config to play mercenary voicelines (Default true)</li>
+                <li>Added a client config to transcript mercenary voicelines (Default false)</li>
+                <li>Added missing voicelines to some mercenaries</li>
+                <li>Fix Vael sometimes being stuck in a permanent skipped state</li>
+            </ul>
+            <h2>Version 0.12.4</h2>
+            <ul>
+                <li>Added EMI compatibility</li>
+                <li>Void-Woven Greaves, Constellar Staff and the Primal Hunting Spear can now be enchanted</li>
+                <li>Updated Legendary Mercenary items text</li>
+            </ul>
+            <h2>Version 0.12.3</h2>
+            <ul>
+                <li>Fixed Missions not being able to start on server</li>
+                <li>Fixed Missions rewards tooltip not correcly aligned</li>
+                <li>Fixed Portal being able to spawn behind blocks</li>
+            </ul>
+            <h2>Version 0.12.2</h2>
+            <ul>
+                <li>Fixed EXP-All Module and Heroic Difficulty Module not being unlockable</li>
+                <li>Fixed Chaos bribe item not being correctly registered</li>
+                <li>Fixed Vael not skipping correctly when Dual Boot Module is installed</li>
+                <li>Fixel Vael Quest being available from the game guide</li>
+                <li>Added an administrator command to activate Admin Debug Mode</li>
+            </ul>
+            <h2>Version 0.12.1</h2>
+            <ul>
+                <li>Fixed Singleplayer crash</li>
+            </ul>
+            <h2>Version 0.12.0</h2>
+            <p><strong>!!! UPDATING WILL CANCEL CURRENTLY SENT MERCENARY</strong></p>
+            <ul>
+                <li>Added Hunger mechanic</li>
+                <li>Added new artefacts for mercenaries obtainable in Legendary Missions</li>
+                <li>Added Statistics for each Mercenary</li>
                 <li>Added Portal animation for sending mission and getting rewards</li>
+                <li>Curios Compatibility</li>
+                <li>Added background texture animations to waiting screen</li>
+                <li>Added Client Configs .toml file and ingame config screen</li>
+                <li>Added Server Configs .toml file</li>
+                <li>Added Lore Progression</li>
+                <li>Bribe item now cycles</li>
+                <li>Added mercenary voices</li>
             </ul>
             <h2>Version 0.11.0</h2>
             <p><strong>!!! UPDATING WILL CANCEL CURRENTLY SENT MERCENARY</strong></p>
@@ -221,9 +316,13 @@
             <h2>Just Enough Items (JEI) Integration<img src="images/jei_logo.png" alt="JEILogo" class="image"/></h2>
             <p data-key="mods-compat-p1">Any item obtainable in a mission will be shown. You will see the necessary Mercenary and Mission Rarity needed to obtain the item.</p>
             <img src="images/jei_compat.png" alt="JEICompat" class="image"/>
+            <h2>EMI Integration<img src="images/emi_logo.png" alt="EMILogo" class="image"/></h2>
+            <p data-key="mods-compat-p1">Same as for the JEI integration, every item obtainable in a mission will be shown and also have the recipe tree.</p>
+            <img src="images/emi_compat.png" alt="EMICompat" class="image"/>
             <h2>Curios Compatibility<img src="images/curios_logo.png" alt="CuriosLogo" class="image"/></h2>
             <p data-key="mods-compat-p2">The <strong>Dimensional Time Clock</strong> item can be put in any generic "Charm" Curios slot. The item will continue to tick like if it was in inventory.</p>
             <p data-key="mods-compat-p3"></p>To open the GUI with the item equipped as a Curio you must use the keybind. ('V' by default)</p>
+            <p data-key="mods-compat-p4"></p>Some powerful artefacts obtained from legendary missions can also be equipped as curios.</p>
             <img src="images/curios_compat.png" alt="CuriosCompat" class="image"/>
         </section>
         <section id="whats-next-page" class="content-section">
@@ -254,6 +353,8 @@
             <p data-key="about-me-p3"> Feel free to contact me on Discord for anything : <strong>sluggly</strong> </p>
         </section>
     </main>
+    <script src="js/items.js"></script>
+    <script src="js/mercenaries.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

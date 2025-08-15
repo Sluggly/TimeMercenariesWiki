@@ -122,3 +122,167 @@ h2:has(img) {
 h1 img {
     align-items: center;
 }
+
+.sub-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.dark-mode .sub-nav {
+    border-bottom: 2px solid #444;
+}
+
+.sub-nav-item {
+    padding: 8px 15px;
+    background-color: #e9e9e9;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .sub-nav-item {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.sub-nav-item:hover {
+    background-color: #dcdcdc;
+}
+
+.dark-mode .sub-nav-item:hover {
+    background-color: #3a3a3a;
+}
+
+.sub-nav-item.active {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}
+
+.dark-mode .sub-nav-item.active {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.sub-content-section {
+    display: none; /* Hidden by default, JS will manage visibility */
+}
+
+/* */
+#mercenary-display-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.dark-mode #mercenary-display-container {
+    border: 1px solid #444;
+}
+
+.merc-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.merc-nav h2 {
+    margin: 0;
+    border-bottom: none;
+}
+
+.merc-details {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#merc-portrait {
+    width: 96px; /* Double the in-game size for clarity */
+    height: 138px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    object-fit: contain; /* Prevents stretching */
+}
+
+.dark-mode #merc-portrait {
+    border-color: #555;
+    background-color: #2a2a2a;
+}
+
+#merc-description {
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.merc-rewards h3, .merc-artifacts h3 {
+    margin-top: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.dark-mode .merc-rewards h3, .dark-mode .merc-artifacts h3 {
+    border-bottom: 1px solid #333;
+}
+
+#merc-rewards-grid {
+    margin-top: 10px;
+}
+
+.rarity-group {
+    margin-bottom: 15px;
+}
+
+.rarity-group h4 {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.reward-item {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: help;
+}
+
+.dark-mode .reward-item {
+    background-color: #2a2a2a;
+    border-color: #555;
+}
+
+#merc-artifacts-showcase {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.artifact-display h4 {
+    margin: 5px 0;
+}
+
+.artifact-display img {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    max-width: 250px;
+}
+.dark-mode .artifact-display img {
+    border-color: #555;
+}
